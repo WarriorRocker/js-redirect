@@ -9,3 +9,30 @@ Simply include the jsRedirect.js file into your site's head section. The script 
 ```html
 <script src="jsRedirect.js"></script>
 ```
+
+## Options
+The options below are configured directly in jsRedirect.js.
+
+####haystack `number`
+Number in percents of 100 amount of users to redirect.
+
+####cname: `string`
+Name of the cookie to store the redirected or excluded state.
+
+####url: `string`
+Destination URL to where the script should redirect the user.
+
+####appendUrlPath: `boolean`
+Whether or not to append the requested path of the old URL to the new URL.
+
+####paramForceRedirect `string`
+Check for flag in incoming URL to force redirection to the new URL and set the cookie.
+
+####paramForceExclude `string`
+Check for flag in incoming URL to force exclusion of redirect and set the cookie.
+
+####daysToRedirect `number`
+Days until the redirect cookie will expire.
+
+####daysToExclude `number`
+Days until the exclusion cookie will expire.
