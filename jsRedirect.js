@@ -105,4 +105,4 @@ var jsRedirect = {
 	}
 };
 
-//jsRedirect.checkCookie();
+jsRedirect.checkCookie();
