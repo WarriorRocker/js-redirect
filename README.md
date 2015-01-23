@@ -55,7 +55,7 @@ Days until the exclusion cookie will expire.
 Testing can be performed by commenting out the jsRedirect checkCookie() method and adding the unitTest() method to your body tags onload attribute. The test.html file included in this repository provides an example of this.
 
 ```html
-<body onload="xoRedirect.unitTest()">
+<body onload="jsRedirect.unitTest()">
 ```
 
 Once redirected you may find it difficult to return back to the original URL in which case you can add the value defined in the paramForceExclude to your URL to override the redirection. http://yourdomain.tld/?xoForceExclude for example. Likewise you can use the value defined for paramForceRedirect to test the redirection without having to hit the haystack or clear your cookies each reload.
