@@ -10,6 +10,20 @@ Simply include the jsRedirect.js file into your site's head section. The script 
 <script src="jsRedirect.js"></script>
 ```
 
+One may wish to programatically engage the redirection check instead of having it run automatically. This can be accomplished by commenting out or removing the last line in jsRedirect.js.
+
+```js
+//jsRedirect.checkCookie();
+```
+
+Then add the call to your own function or code.
+
+```js
+function yourFunction() {
+  jsRedirect.checkCookie();
+}
+```
+
 ## Options
 The options below are configured directly in jsRedirect.js.
 
@@ -36,3 +50,12 @@ Days until the redirect cookie will expire.
 
 ####daysToExclude `number`
 Days until the exclusion cookie will expire.
+
+##Testing
+Testing can be performed by commenting out the jsRedirect checkCookie() method and adding the unitTest() method to your body tags onload attribute. The test.html file included in this repository provides an example of this.
+
+```html
+<body onload="xoRedirect.unitTest()">
+```
+
+Once redirected you may find it difficult to return back to the original URL in which case you can add the value defined in the paramForceExclude to your URL to override the redirection. http://yourdomain.tld/?xoForceExclude for example. Likewise you can use the value defined for paramForceRedirect to test the redirection without having to hit the haystack or clear your cookies each reload.
