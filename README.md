@@ -1,4 +1,5 @@
-# js-redirect
+[jsRedirect](http://www.xodustech.com/development/javascript-js-redirect)
+============
 Javascript phased rolled out and redirection script
 
 ## Purpose
