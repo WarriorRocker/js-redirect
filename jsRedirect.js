@@ -4,7 +4,7 @@
  */
 
 var jsRedirect = {
-	haystack: 10, // Number in percents of 100
+	haystack: 50, // Number in percents of 100
 	cname: 'jsRedirect', // Name of the cookie
 	url: 'http://www.xodustech.com/', // Url to redirect
 	appendUrlPath: true, // Url add requested path
